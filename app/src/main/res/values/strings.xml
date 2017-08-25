@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="button_order">Order</string>
+    <string name="edit_text_quantity">0</string>
+    <string name="text_coffee_range">Coffee Range</string>
+    <string name="text_espresso">Espresso (Short Black)</string>
+    <string name="text_smacchiato">Short Macchiato</string>
+    <string name="text_lmachiato">Long Macchiato</string>
+    <string name="text_ristretto">Ristretto</string>
+    <string name="text_lblack">Long Black (Americano)</string>
+    <string name="text_pie">Pie n Tart Slice</string>
+    <string name="text_cheesecake">Cheesecake Slice</string>
+    <string name="text_bacon">Back bacon n cheddar</string>
+    <string name="text_hickory">Hickory ham, cheddar n tomato</string>
+    <string name="text_shangahi">Shanghai BBQ</string>
+    <string name="text_egg">Back bacon n egg</string>
+    <string name="text_cheddar">Cheddar n tomato</string>
+    <string name="button_order1">Order</string>
+    <string name="text_latte">Caffe Latte</string>
+    <string name="text_view_quantity">Quatinty</string>
+    <string name="text_view_coffee">Coffee Range</string>
+
+
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maxresdefault"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.codetribe.justjava.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view_quantity"
+        android:textSize="20sp"
+        tools:text="@string/text_view_quantity"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnDecrement"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView_quantity"
+        android:layout_alignBottom="@+id/textView_quantity"
+        android:layout_alignParentStart="true"
+        android:onClick="decrement"
+        android:text="-"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/textView_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/btnDecrement"
+        android:background="@android:color/background_light"
+        android:text="@string/edit_text_quantity"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView_quantity"
+        android:layout_alignBottom="@+id/textView_quantity"
+        android:layout_toRightOf="@+id/textView_quantity"
+        android:onClick="increment"
+        android:text="+"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnDecrement"
+        android:layout_marginTop="28dp"
+        android:text="@string/text_view_coffee"
+        tools:text="@string/text_coffee_range"
+        android:paddingLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/chkEspres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="13dp"
+        android:text="@string/text_espresso"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/chkLatte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chkEspres"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/chkEspres"
+        android:text="@string/text_latte" />
+
+    <CheckBox
+        android:id="@+id/chkLBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chkEspres"
+        android:layout_marginTop="11dp"
+        android:text="@string/text_lblack"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/chkLMacchiato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chkLBlack"
+        android:text="@string/text_lmachiato"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:id="@+id/chkSMacchiato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkLMacchiato"
+        android:layout_alignBottom="@+id/chkLMacchiato"
+        android:layout_alignStart="@+id/chkRistretto"
+        android:text="@string/text_smacchiato" />
+
+    <CheckBox
+        android:id="@+id/chkRistretto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkLBlack"
+        android:layout_alignBottom="@+id/chkLBlack"
+        android:layout_alignStart="@+id/chkLatte"
+        android:text="@string/text_ristretto" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:onClick="order"
+        android:text="@string/button_order"
+        tools:text="@string/button_order1"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/chkRistretto"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
+
